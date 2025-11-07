@@ -9,11 +9,10 @@
 <br>
 <br>
 
-  **Credenciales de la base de datos SQL Server:**
-  Usuario: User1
+  **Credenciales de la base de datos SQL Server** <br>
+  Usuario: User1 <br>
   Contraseña: admin
   
-
+<br> <br>
   <span style="color: blue;">Carolina Bolayna Alvarez</span>
-  <span style="color: #f03c15;">carolinabolayna13@gmail.com</span>
   
