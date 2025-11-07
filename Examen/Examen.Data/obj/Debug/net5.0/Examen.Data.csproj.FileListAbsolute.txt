@@ -1,0 +1,36 @@
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.deps.json
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.runtimeconfig.json
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.runtimeconfig.dev.json
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\ref\Examen.Data.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.pdb
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\Examen.Entity.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\bin\Debug\net5.0\Examen.Entity.pdb
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.csproj.AssemblyReference.cache
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.AssemblyInfoInputs.cache
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.AssemblyInfo.cs
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.csproj.CoreCompileInputs.cache
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.csproj.CopyComplete
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\ref\Examen.Data.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.pdb
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.genruntimeconfig.cache
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.deps.json
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.runtimeconfig.json
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.runtimeconfig.dev.json
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\ref\Examen.Data.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\Examen.Data.pdb
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\Examen.Entity.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\bin\Debug\net5.0\Examen.Entity.pdb
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.csproj.AssemblyReference.cache
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.AssemblyInfoInputs.cache
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.AssemblyInfo.cs
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.csproj.CoreCompileInputs.cache
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.csproj.CopyComplete
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\ref\Examen.Data.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.pdb
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Data\obj\Debug\net5.0\Examen.Data.genruntimeconfig.cache

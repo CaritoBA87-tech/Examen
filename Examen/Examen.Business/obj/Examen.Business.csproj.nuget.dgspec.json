@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Business\\Examen.Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Business\\Examen.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Business\\Examen.Business.csproj",
+        "projectName": "Examen.Business",
+        "projectPath": "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Business\\Examen.Business.csproj",
+        "packagesPath": "C:\\Users\\ckaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ckaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Entity\\Examen.Entity.csproj": {
+                "projectPath": "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Entity\\Examen.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Entity\\Examen.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Entity\\Examen.Entity.csproj",
+        "projectName": "Examen.Entity",
+        "projectPath": "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Entity\\Examen.Entity.csproj",
+        "packagesPath": "C:\\Users\\ckaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ckaro\\Desktop\\Respaldo 2\\Examen\\Examen.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ckaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

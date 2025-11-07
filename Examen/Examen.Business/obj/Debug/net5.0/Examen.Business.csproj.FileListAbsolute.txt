@@ -1,0 +1,30 @@
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\bin\Debug\net5.0\Examen.Business.deps.json
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\bin\Debug\net5.0\Examen.Business.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\bin\Debug\net5.0\ref\Examen.Business.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\bin\Debug\net5.0\Examen.Business.pdb
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\bin\Debug\net5.0\Examen.Entity.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\bin\Debug\net5.0\Examen.Entity.pdb
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.csproj.AssemblyReference.cache
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.AssemblyInfoInputs.cache
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.AssemblyInfo.cs
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.csproj.CoreCompileInputs.cache
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.csproj.CopyComplete
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\ref\Examen.Business.dll
+C:\Users\ckaro\Desktop\Master Loyalty Group\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.pdb
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\bin\Debug\net5.0\Examen.Business.deps.json
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\bin\Debug\net5.0\Examen.Business.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\bin\Debug\net5.0\ref\Examen.Business.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\bin\Debug\net5.0\Examen.Business.pdb
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\bin\Debug\net5.0\Examen.Entity.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\bin\Debug\net5.0\Examen.Entity.pdb
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.csproj.AssemblyReference.cache
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.AssemblyInfoInputs.cache
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.AssemblyInfo.cs
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.csproj.CoreCompileInputs.cache
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.csproj.CopyComplete
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\ref\Examen.Business.dll
+C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Business\obj\Debug\net5.0\Examen.Business.pdb
