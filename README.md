@@ -7,7 +7,7 @@
 - Arquitectura de 4 capas: Data, Entity, Business y Front
 - Visual Studio 2019
 <br>
-<br>
+
 
   **Credenciales de la base de datos SQL Server** <br>
   Usuario: User1 <br>
