@@ -13,6 +13,3 @@
   Usuario: User1 <br>
   Contraseña: admin
   
-<br> <br>
-  <span style="color: blue;">Carolina Bolayna Alvarez</span>
-  
