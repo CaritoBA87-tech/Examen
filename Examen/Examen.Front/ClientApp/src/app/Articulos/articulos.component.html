@@ -15,7 +15,7 @@
     <td style="vertical-align:middle">{{i + 1}}</td>
     <td style="vertical-align:middle">{{item.codigo}}</td>
     <td style="vertical-align:middle">{{item.descripcion}}</td>
-    <td style="vertical-align:middle">{{item.precio}}</td>
+    <td style="vertical-align:middle">{{item.precio | currency}}  </td>
     <td style="vertical-align:middle">{{item.stock}}</td>
     <td class="text-xs-center" style="text-align:center;">
       <button style="background-color:teal; border:none;" class="btn btn-danger btn-sm" [routerLink]="['/articulosEdit', item.id]">
