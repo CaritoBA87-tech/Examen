@@ -11,8 +11,9 @@
   **Credenciales de la base de datos SQL Server:**
   Usuario: User1
   Contraseña: admin
+  
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
 
-
-  <span style="color: darkblue;">Carolina Bolayna Alvarez</span>
-  <span style="color: darkblue;">carolinabolayna13@gmail.com</span>
+  <span style="color: blue;">Carolina Bolayna Alvarez</span>
+  <span style="color: #1589F0;">carolinabolayna13@gmail.com</span>
   
