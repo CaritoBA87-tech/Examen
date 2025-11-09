@@ -88,6 +88,12 @@ namespace Examen.Business.Services
             await _articuloRepository.UpdateAsync(articulo);
         }
 
+        public async Task<IEnumerable<TiendaResponseDto>> GetStoresByArticleIdAsync(int id)
+        {
+            var tiendas = await _articuloRepository.GetStoresByArticleIdAsync(id);
+            return _mapper.Map<IEnumerable<TiendaResponseDto>>(tiendas);
+        }
+
 
     }
 }

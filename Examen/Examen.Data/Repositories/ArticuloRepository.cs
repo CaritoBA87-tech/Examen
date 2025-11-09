@@ -49,7 +49,7 @@ namespace Examen.Data.Repositories
 
         public async Task<IEnumerable<Articulo>> GetAllAsync()
         {
-            return await _context.Articulos.ToListAsync();
+            return await _context.Articulos.Include(x => x.ArticulosTienda).ToListAsync();
         }
 
         public async Task<Articulo> GetByIdAsync(int id)
@@ -97,6 +97,17 @@ namespace Examen.Data.Repositories
                 }
             }
 
+        }
+
+        public async Task<IEnumerable<Tienda>> GetStoresByArticleIdAsync(int id)
+        {
+            var stores = from a in _context.ArticulosTiendas
+                         join b in _context.Articulos
+                         on a.ArticuloID equals b.Id
+                         where b.Id == id
+                         select new Tienda { Id = a.Tienda.Id, Sucursal = a.Tienda.Sucursal };
+
+            return stores;
         }
     }
 }

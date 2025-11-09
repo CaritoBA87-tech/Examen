@@ -15,7 +15,8 @@ namespace Examen.Entity.DTOs
         public decimal Precio { get; set; }
         public string Imagen { get; set; }
         public int Stock { get; set; }
+        //public List<ArticuloTienda> ArticulosTienda { get; set; }
 
-        //public List<ArticleTiendaResponseDto> ArticulosTienda { get; set; }
+        public List<ArticleTiendaResponseDto> ArticulosTienda { get; set; }
     } 
 }

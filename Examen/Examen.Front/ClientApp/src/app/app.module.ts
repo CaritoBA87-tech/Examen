@@ -16,6 +16,7 @@ import { TiendasComponent } from './Tiendas/tiendas.component';
 import { TiendasEditComponent } from './Tiendas/tiendas-edit.component';
 import { ArticulosComponent } from './Articulos/articulos.component';
 import { ArticulosEditComponent } from './Articulos/articulos-edit.component';
+import { ModalComponent } from './Modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ArticulosEditComponent } from './Articulos/articulos-edit.component';
     TiendasComponent,
     TiendasEditComponent,
     ArticulosComponent,
-    ArticulosEditComponent
+    ArticulosEditComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

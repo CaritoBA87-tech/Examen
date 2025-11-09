@@ -117,7 +117,7 @@ export class ArticulosEditComponent {
           this.router.navigate(['/articulos']);
         }, error => console.log(error));
 
-        this.router.navigate(['/articulos']);
+        //this.router.navigate(['/articulos']);
       }, error => console.log(error));
     }
 

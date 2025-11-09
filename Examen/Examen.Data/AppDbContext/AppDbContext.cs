@@ -40,6 +40,11 @@ namespace Examen.Data.AppDbContext
                 .IsRequired();
                 entity.Property(e => e.Precio)
                 .HasColumnType("decimal(18,2)");
+
+                //Relación de muchos a muchos
+                entity.HasMany(e => e.ArticulosTienda)
+                .WithOne(i => i.Articulo)
+                .HasForeignKey(i => i.ArticuloID);
             });
 
             modelBuilder.Entity<Tienda>(entity =>
@@ -47,7 +52,15 @@ namespace Examen.Data.AppDbContext
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Sucursal)
                 .IsRequired();
+
+                //Relación de muchos a muchos
+                entity.HasMany(e => e.ArticulosTienda)
+                .WithOne(i => i.Tienda)
+                .HasForeignKey(i => i.TiendaID);
             });
+
+            modelBuilder.Entity<ArticuloTienda>()
+               .HasKey(i => new { i.ArticuloID, i.TiendaID });
 
             //Relación de muchos a muchos
             modelBuilder.Entity<ClienteArticulo>()
@@ -62,20 +75,6 @@ namespace Examen.Data.AppDbContext
             .HasOne(pg => pg.Articulo)
             .WithMany(p => p.ClienteArticulos)
             .HasForeignKey(pg => pg.ArticuloID);
-
-            //Relación de muchos a muchos
-            modelBuilder.Entity<ArticuloTienda>()
-            .HasKey(pg => new { pg.ArticuloID, pg.TiendaID });
-
-            modelBuilder.Entity<ArticuloTienda>()
-            .HasOne(pg => pg.Articulo)
-            .WithMany(p => p.ArticulosTienda)
-            .HasForeignKey(pg => pg.ArticuloID);
-
-            modelBuilder.Entity<ArticuloTienda>()
-            .HasOne(pg => pg.Tienda)
-            .WithMany(p => p.ArticulosTienda)
-            .HasForeignKey(pg => pg.TiendaID);
 
         }
     }

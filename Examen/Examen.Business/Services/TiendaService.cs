@@ -60,5 +60,6 @@ namespace Examen.Business.Services
         {
             await _tiendaRepository.UpdateAsync(tienda);
         }
+
     }
 }

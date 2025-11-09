@@ -102,5 +102,22 @@ namespace Examen.Front.Controllers
             await _articleService.UpdateArticleByIdAsync(articulo);
             return NoContent();
         }
+
+        [Route("GetStoresByArticleId/{id}")]
+        public async Task<ActionResult<IEnumerable<TiendaResponseDto>>> GetStoresByArticleId(int id)
+        {
+            try
+            {
+                var tiendas = await _articleService.GetStoresByArticleIdAsync(id);
+                return Ok(tiendas);
+            }
+
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+        }
+
+
     }
 }

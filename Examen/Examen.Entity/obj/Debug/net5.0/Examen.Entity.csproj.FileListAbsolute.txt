@@ -14,7 +14,6 @@ C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\bin\Debug\net5.0\Examen.E
 C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\bin\Debug\net5.0\Examen.Entity.dll
 C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\bin\Debug\net5.0\ref\Examen.Entity.dll
 C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\bin\Debug\net5.0\Examen.Entity.pdb
-C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\obj\Debug\net5.0\Examen.Entity.csproj.AssemblyReference.cache
 C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\obj\Debug\net5.0\Examen.Entity.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\obj\Debug\net5.0\Examen.Entity.AssemblyInfoInputs.cache
 C:\Users\ckaro\Desktop\Respaldo 2\Examen\Examen.Entity\obj\Debug\net5.0\Examen.Entity.AssemblyInfo.cs

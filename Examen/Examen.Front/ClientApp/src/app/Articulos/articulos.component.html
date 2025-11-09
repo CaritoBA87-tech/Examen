@@ -3,13 +3,13 @@
 <div class="commands text-right" style="margin-bottom:10px;">
   <button type="button"
           [routerLink]="['/articulosEdit']"
-          class="btn btn-primary">
-    Nuevo artículo
+         style="background-color:teal; border:none;" class="btn btn-danger btn-sm">
+    Agregar artículo
   </button>
 </div>
 
 <table class="table table-sm table-bordered table-striped">
-  <tr><th></th><th>Código</th><th>Descripción</th><th>Precio</th><th>Stock</th><th></th><th></th></tr>
+  <tr style="background-color: gainsboro;"><th></th><th>Código</th><th>Descripción</th><th>Precio</th><th>Stock</th><th>Tiendas</th><th></th><th></th></tr>
 
   <tr *ngFor="let item of articulos; let i = index;">
     <td style="vertical-align:middle">{{i + 1}}</td>
@@ -17,6 +17,20 @@
     <td style="vertical-align:middle">{{item.descripcion}}</td>
     <td style="vertical-align:middle">{{item.precio | currency}}  </td>
     <td style="vertical-align:middle">{{item.stock}}</td>
+    <td style="vertical-align:middle">
+
+      <span *ngIf="item.articulosTienda.length == 0; else disponibilidad">Ninguna</span>
+
+      <ng-template #disponibilidad>
+        <button class="link-button" (click)="showStores(item.id)">
+          {{item.articulosTienda.length}}
+          <span *ngIf="item.articulosTienda.length > 1;">tiendas</span>
+          <span *ngIf="item.articulosTienda.length == 1;">tienda</span>
+        </button>
+      </ng-template>
+
+
+    </td>
     <td class="text-xs-center" style="text-align:center;">
       <button style="background-color:teal; border:none;" class="btn btn-danger btn-sm" [routerLink]="['/articulosEdit', item.id]">
         Editar
@@ -29,3 +43,7 @@
     </td>
   </tr>
 </table>
+
+<app-modal></app-modal>
+
+

@@ -22,5 +22,7 @@ namespace Examen.Entity.Interfaces
         Task<IEnumerable<ArticuloTienda>> getTiendasArticulo(int id);
 
         Task updateTiendasArticulo(List<ArticleTiendaResponseDto> conjunto);
+
+        Task<IEnumerable<Tienda>> GetStoresByArticleIdAsync(int id);
     }
 }

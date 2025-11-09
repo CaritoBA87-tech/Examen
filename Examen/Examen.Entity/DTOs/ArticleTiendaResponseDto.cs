@@ -10,5 +10,6 @@ namespace Examen.Entity.DTOs
     {
         public int ArticuloID { get; set; }
         public int TiendaID { get; set; }
+        public string Tienda { get; set; }
     }
 }

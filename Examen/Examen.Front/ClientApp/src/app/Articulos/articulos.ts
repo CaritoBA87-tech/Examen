@@ -6,4 +6,10 @@ export interface Articulo {
   imagen: string;
   stock: number;
   tiendasIDs: number[];
+  articulosTiendas: ArticuloTienda[];
+}
+
+export interface ArticuloTienda {
+  articuloID: number;
+  tiendaId: number;
 }
