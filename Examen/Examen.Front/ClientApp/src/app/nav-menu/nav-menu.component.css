@@ -16,3 +16,10 @@ html {
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
+
+.nav-item {
+  border-right: 1px solid teal;
+  border-left: 1px solid teal;
+  text-align: center;
+  padding: 0px 15px;
+}

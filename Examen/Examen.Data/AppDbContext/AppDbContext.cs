@@ -31,6 +31,11 @@ namespace Examen.Data.AppDbContext
                 .IsRequired();
                 entity.Property(e => e.Apellido)
                 .IsRequired();
+
+                //Relación de muchos a muchos con Artículos
+                entity.HasMany(e => e.ClienteArticulos)
+                .WithOne(i => i.Cliente)
+                .HasForeignKey(i => i.ClienteID);
             });
 
             modelBuilder.Entity<Articulo>(entity =>
@@ -41,8 +46,13 @@ namespace Examen.Data.AppDbContext
                 entity.Property(e => e.Precio)
                 .HasColumnType("decimal(18,2)");
 
-                //Relación de muchos a muchos
+                //Relación de muchos a muchos con Tienda
                 entity.HasMany(e => e.ArticulosTienda)
+                .WithOne(i => i.Articulo)
+                .HasForeignKey(i => i.ArticuloID);
+
+                //Relación de muchos a muchos con Cliente
+                entity.HasMany(e => e.ClienteArticulos)
                 .WithOne(i => i.Articulo)
                 .HasForeignKey(i => i.ArticuloID);
             });
@@ -53,7 +63,7 @@ namespace Examen.Data.AppDbContext
                 entity.Property(e => e.Sucursal)
                 .IsRequired();
 
-                //Relación de muchos a muchos
+                //Relación de muchos a muchos con Artículo
                 entity.HasMany(e => e.ArticulosTienda)
                 .WithOne(i => i.Tienda)
                 .HasForeignKey(i => i.TiendaID);
@@ -62,8 +72,11 @@ namespace Examen.Data.AppDbContext
             modelBuilder.Entity<ArticuloTienda>()
                .HasKey(i => new { i.ArticuloID, i.TiendaID });
 
-            //Relación de muchos a muchos
             modelBuilder.Entity<ClienteArticulo>()
+            .HasKey(i => new { i.ClienteID, i.ArticuloID });
+
+            //Relación de muchos a muchos
+            /*modelBuilder.Entity<ClienteArticulo>()
             .HasKey(pg => new { pg.ClienteID, pg.ArticuloID });
 
             modelBuilder.Entity<ClienteArticulo>()
@@ -74,7 +87,7 @@ namespace Examen.Data.AppDbContext
             modelBuilder.Entity<ClienteArticulo>()
             .HasOne(pg => pg.Articulo)
             .WithMany(p => p.ClienteArticulos)
-            .HasForeignKey(pg => pg.ArticuloID);
+            .HasForeignKey(pg => pg.ArticuloID);*/
 
         }
     }
