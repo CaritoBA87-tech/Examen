@@ -1,0 +1,54 @@
+
+  <h4>Carrito de compras</h4>
+
+  <table class="table table-sm table-bordered" style="margin-top:45px;">
+    <tr style="background-color: rgba(220, 220, 220, 0.6);"><th>Cantidad</th><th>Artículo</th><th>Precio</th><th>Subtotal</th><th></th></tr>
+    <tbody>
+      <tr *ngIf="cart.lines.length == 0">
+        <td colspan="5" class="text-xs-center">
+          Tu carrito está vacío
+        </td>
+      </tr>
+      <tr *ngFor="let line of cart.lines">
+        <td>
+          <input type="number" class="form-control-sm"
+                 style="width:5em"
+                 [value]="line.quantity"
+                 (change)="cart.updateQuantity(line.article,
+                    $event.target.value)" />
+        </td>
+        <td>{{line.article.descripcion}}</td>
+        <td class="text-xs-right" style="text-align:end;">
+          {{line.article.precio | currency}}
+        </td>
+        <td class="text-xs-right" style="text-align:end;">
+          {{(line.lineTotal) | currency}}
+        </td>
+        <td class="text-xs-center" style="text-align:center;">
+          <button class="btn btn-sm btn-danger"
+                  (click)="cart.removeLine(line.article.id)">
+            Eliminar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr style=" background-color: rgba(220, 220, 220, 0.4); ">
+        <td colspan="3" class="text-xs-right" style="border-top: 1px solid black;">Total:</td>
+        <td class="text-xs-right" style="font-weight: bold; font-size: 17px; text-align: end;">
+          {{cart.cartPrice | currency}}
+        </td>
+        <td>
+
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+<div class="text-xs-center">
+  <button class="btn btn-primary" routerLink="/articulos" class="btn btn-default" style="background-color:teal; color:white;">Continuar comprando</button>
+  <button class="btn btn-success" routerLink="/checkout"
+          [disabled]="cart.lines.length == 0" style="margin-left: 10px;">
+    Finalizar compra
+  </button>
+</div>

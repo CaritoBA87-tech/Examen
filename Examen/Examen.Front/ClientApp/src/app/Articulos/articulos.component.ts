@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Articulo } from './articulos';
 import { ModalComponent } from '../Modal/modal.component';
 import { Tienda } from '../Tiendas/tiendas';
+import { Cart } from '../Servicios/cart.service';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-articulos',
@@ -18,7 +20,9 @@ export class ArticulosComponent {
 
   constructor(
     private http: HttpClient,
-    @Inject('BASE_URL') private baseUrl: string) {
+    @Inject('BASE_URL') private baseUrl: string,
+    private cart: Cart,
+    private router: Router   ) {
   }
 
   ngOnInit() {
@@ -68,7 +72,10 @@ export class ArticulosComponent {
     this.childComponent.showModal();
   }
 
-
+  addProductToCart(article: Articulo) {
+    this.cart.addLine(article);
+    this.router.navigateByUrl("/carrito");
+  }
 
 }
 

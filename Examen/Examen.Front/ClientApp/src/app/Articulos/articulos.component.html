@@ -14,9 +14,19 @@
   <tr *ngFor="let item of articulos; let i = index;">
     <td style="vertical-align:middle">{{i + 1}}</td>
     <td style="vertical-align:middle">{{item.codigo}}</td>
-    <td style="vertical-align:middle">{{item.descripcion}}</td>
-    <td style="vertical-align:middle">{{item.precio | currency}}  </td>
-    <td style="vertical-align:middle">{{item.stock}}</td>
+    <td style="vertical-align:middle">
+      {{item.descripcion}}
+
+      <div style="float:right;">
+        <button id="addButton" class="btn  btn-sm pull-xs-right" title="Agregar al carrito"
+                (click)="addProductToCart(item)" style="background-color: rgba(220, 220, 220, 0.6);  border-radius: 50px; margin-right: 6px;">
+          <i  class="fa fa-cart-plus" style="color: teal; font-size:23px; "  ></i>
+        </button>
+      </div>
+
+    </td>
+    <td style="vertical-align: middle; text-align:right;">{{item.precio | currency}}  </td>
+    <td style="vertical-align: middle; text-align:right;">{{item.stock}}</td>
     <td style="vertical-align:middle">
 
       <span *ngIf="item.articulosTienda.length == 0; else disponibilidad">Ninguna</span>

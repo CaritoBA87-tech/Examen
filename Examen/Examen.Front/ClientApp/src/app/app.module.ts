@@ -17,6 +17,9 @@ import { TiendasEditComponent } from './Tiendas/tiendas-edit.component';
 import { ArticulosComponent } from './Articulos/articulos.component';
 import { ArticulosEditComponent } from './Articulos/articulos-edit.component';
 import { ModalComponent } from './Modal/modal.component';
+import { Cart } from "./Servicios/cart.service";
+import { CarritoResumenComponent } from './CarritoResumen/carritoResumen.component';
+import { CarritoDetalleComponent } from './CarritoDetalle/carritoDetalle.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { ModalComponent } from './Modal/modal.component';
     TiendasEditComponent,
     ArticulosComponent,
     ArticulosEditComponent,
-    ModalComponent
+    ModalComponent,
+    CarritoResumenComponent,
+    CarritoDetalleComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -47,11 +52,12 @@ import { ModalComponent } from './Modal/modal.component';
       { path: 'tiendasEdit', component: TiendasEditComponent },
       { path: 'articulos', component: ArticulosComponent },
       { path: 'articulosEdit/:id', component: ArticulosEditComponent },
-      { path: 'articulosEdit', component: ArticulosEditComponent }
+      { path: 'articulosEdit', component: ArticulosEditComponent },
+      { path: 'carrito', component: CarritoDetalleComponent }
     ]),
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [Cart],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
