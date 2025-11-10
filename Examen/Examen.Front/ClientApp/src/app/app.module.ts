@@ -43,7 +43,7 @@ import { CarritoDetalleComponent } from './CarritoDetalle/carritoDetalle.compone
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: ClientesComponent, pathMatch: 'full' },
+      { path: '', component: ArticulosComponent, pathMatch: 'full' },
       { path: 'clientes', component: ClientesComponent },
       { path: 'clientesEdit/:id', component: ClientesEditComponent },
       { path: 'clientesEdit', component: ClientesEditComponent },
