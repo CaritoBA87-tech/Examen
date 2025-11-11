@@ -27,12 +27,16 @@
 
 <br><br>
 **Edición de artículos:** <br>
-<img width="1850" height="893" alt="image" src="https://github.com/user-attachments/assets/e24801e2-aba1-417c-b6c2-9eba0c3ee179" /> <br>
+<img width="1850" height="893" alt="image" src="https://github.com/user-attachments/assets/e24801e2-aba1-417c-b6c2-9eba0c3ee179" />
 
 <br><br>
 **Tiendas:** <br>
 <img width="1978" height="705" alt="image" src="https://github.com/user-attachments/assets/07e7f541-12e5-4102-b070-64e9ad3faa7e" />
 
+<br><br>
+**Edición de tiendas:** <br>
+<img width="2004" height="703" alt="image" src="https://github.com/user-attachments/assets/d2220033-9be4-42e7-9394-8711631a9eab" />
 
-
-
+<br><br>
+**Carrito de compras:** <br>
+<img width="1996" height="757" alt="image" src="https://github.com/user-attachments/assets/f37090bd-463a-4713-b8ee-ee1fabb7e29c" />
