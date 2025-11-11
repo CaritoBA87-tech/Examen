@@ -1,7 +1,7 @@
 ## Examen
 ### Tecnologías utilizadas en el proyecto
 - .NET Core 5
-- Angular 8
+- Angular
 - EntityFrameworkCore 5.0.10 (Code first)
 - Base de datos SQL Server
 - Arquitectura de 4 capas: Data, Entity, Business y Front
