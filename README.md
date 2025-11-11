@@ -27,7 +27,12 @@
 
 <br><br>
 **Edición de artículos:** <br>
-<img width="1186" height="558" alt="image" src="https://github.com/user-attachments/assets/17857fc2-9e55-4e72-9e40-6abf45a21602" /> <br>
+<img width="1850" height="893" alt="image" src="https://github.com/user-attachments/assets/e24801e2-aba1-417c-b6c2-9eba0c3ee179" /> <br>
+
+<br><br>
+**Tiendas:** <br>
+<img width="1978" height="705" alt="image" src="https://github.com/user-attachments/assets/07e7f541-12e5-4102-b070-64e9ad3faa7e" />
+
 
 
 
