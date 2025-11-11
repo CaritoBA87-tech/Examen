@@ -12,4 +12,11 @@
   **Credenciales de la base de datos SQL Server** <br>
   Usuario: User1 <br>
   Contraseña: admin
-  
+
+**Clientes** <br>
+  <img width="1284" height="456" alt="image" src="https://github.com/user-attachments/assets/bec23182-6d2d-4409-8dfd-0a1b0d58ab76" />
+
+**Edición de clientes** <br>
+
+<img width="1252" height="476" alt="image" src="https://github.com/user-attachments/assets/d3611389-6df2-43cb-8891-9c04645e05ba" />
+
