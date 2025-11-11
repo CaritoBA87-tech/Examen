@@ -13,4 +13,3 @@
   Usuario: User1 <br>
   Contraseña: admin
   
-![CV Photo](https://github.com/user-attachments/assets/696ea0ba-85f7-4f14-834b-672ecb8c8dad)
