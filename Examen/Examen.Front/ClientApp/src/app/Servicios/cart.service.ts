@@ -7,12 +7,21 @@ export class Cart {
   public itemCount: number = 0;
   public cartPrice: number = 0;
 
+  constructor() {
+    this.lines = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+
+    if (this.lines.length > 0)
+      this.recalculate();
+  }
+
   addLine(article: Articulo, quantity: number = 1) {
     let line = this.lines.find(line => line.article.id == article.id);
     if (line != undefined) {
       line.quantity += quantity;
     } else {
-      this.lines.push(new CartLine(article, quantity));
+      this.lines.push(new CartLine(article, quantity, article.precio * quantity));
+      //this.lines.push(new CartLine(article, quantity));
+      localStorage.setItem("cart", JSON.stringify(this.lines));
     }
     this.recalculate();
   }
@@ -21,13 +30,16 @@ export class Cart {
     let line = this.lines.find(line => line.article.id == article.id);
     if (line != undefined) {
       line.quantity = Number(quantity);
+      line.subtotal = line.article.precio * line.quantity;
+      localStorage.setItem("cart", JSON.stringify(this.lines));
     }
     this.recalculate();
   }
 
   removeLine(id: number) {
     let index = this.lines.findIndex(line => line.article.id == id);
-    this.lines.splice(index,1);
+    this.lines.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(this.lines));
     this.recalculate();
   }
 
@@ -48,10 +60,13 @@ export class Cart {
 }
 
 export class CartLine {
-  constructor(public article: Articulo,
-    public quantity: number) { }
+  /*constructor(public article: Articulo,
+    public quantity: number) { }*/
 
-  get lineTotal() {
+  constructor(public article: Articulo,
+    public quantity: number, public subtotal: number) { }
+
+  /*get lineTotal() {
     return this.quantity * this.article.precio;
-  }
+  }*/
 }

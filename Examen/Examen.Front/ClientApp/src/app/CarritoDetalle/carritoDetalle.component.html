@@ -22,7 +22,8 @@
           {{line.article.precio | currency}}
         </td>
         <td class="text-xs-right" style="text-align:end;">
-          {{(line.lineTotal) | currency}}
+          <!--{{(line.lineTotal) | currency}}-->
+              {{(line.subtotal) | currency}}
         </td>
         <td class="text-xs-center" style="text-align:center;">
           <button class="btn btn-sm btn-danger"
