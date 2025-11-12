@@ -23,12 +23,14 @@
 
 <br><br>
 **Artículos:** <br>
-<img width="1238" height="590" alt="image" src="https://github.com/user-attachments/assets/fe53f058-b696-4b8e-b6c7-25db2a64504c" />
+<img width="1946" height="923" alt="image" src="https://github.com/user-attachments/assets/d0134726-afad-44a5-871a-90ea4867c4ee" />
+
 
 
 <br><br>
 **Edición de artículos:** <br>
-<img width="1195" height="557" alt="image" src="https://github.com/user-attachments/assets/60491c31-fd19-425e-8bec-b1dd90df7662" />
+<img width="1908" height="865" alt="image" src="https://github.com/user-attachments/assets/f2bd8055-98e4-4970-884c-ad05460375ad" />
+
 
 
 <br><br>
