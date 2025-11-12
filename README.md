@@ -23,11 +23,22 @@
 
 <br><br>
 **Artículos:** <br>
-<img width="2004" height="825" alt="image" src="https://github.com/user-attachments/assets/06ee4f47-cc53-4c31-a631-d8a698622c81" />
+<img width="1946" height="923" alt="image" src="https://github.com/user-attachments/assets/d0134726-afad-44a5-871a-90ea4867c4ee" />
+
+
 
 <br><br>
 **Edición de artículos:** <br>
-<img width="1850" height="893" alt="image" src="https://github.com/user-attachments/assets/e24801e2-aba1-417c-b6c2-9eba0c3ee179" />
+<img width="1908" height="865" alt="image" src="https://github.com/user-attachments/assets/f2bd8055-98e4-4970-884c-ad05460375ad" />
+
+
+
+<br><br>
+**Disponibilidad en tiendas del artículo:** <br>
+<img width="549" height="504" alt="image" src="https://github.com/user-attachments/assets/8d8269de-608a-4693-bc1d-1a27e08d7dc1" />
+
+
+
 
 <br><br>
 **Tiendas:** <br>
