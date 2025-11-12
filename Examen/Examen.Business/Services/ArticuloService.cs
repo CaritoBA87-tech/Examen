@@ -35,9 +35,9 @@ namespace Examen.Business.Services
 
             List<ArticuloTienda> articuloTiendas = new List<ArticuloTienda>();
 
-            foreach (var item in crearArticuloDto.TiendasIDs)
+            foreach (var item in crearArticuloDto.articulosTiendas)
             {
-                articuloTiendas.Add(new ArticuloTienda { ArticuloID = createArticle.Id, TiendaID =item, Fecha=DateTime.Now });
+                articuloTiendas.Add(new ArticuloTienda { ArticuloID = createArticle.Id, TiendaID =item.TiendaID, Fecha=DateTime.Now, Stock= item.Stock });
             }
 
             await _articuloRepository.CreateAsyncArticuloTienda(articuloTiendas);
@@ -88,10 +88,24 @@ namespace Examen.Business.Services
             await _articuloRepository.UpdateAsync(articulo);
         }
 
-        public async Task<IEnumerable<TiendaResponseDto>> GetStoresByArticleIdAsync(int id)
+        /*public async Task<IEnumerable<TiendaResponseDto>> GetStoresByArticleIdAsync(int id)
         {
             var tiendas = await _articuloRepository.GetStoresByArticleIdAsync(id);
             return _mapper.Map<IEnumerable<TiendaResponseDto>>(tiendas);
+        }*/
+
+        public async Task<IEnumerable<ArticleTiendaResponseDto>> GetStoresByArticleIdAsync(int id)
+        {
+            var aux = await _articuloRepository.GetStoresByArticleIdAsync(id);
+
+            var tiendas = (from a in aux
+                           select new ArticleTiendaResponseDto
+                           {
+                               Stock = a.Stock,
+                               Tienda = a.Tienda.Sucursal
+                           }).ToList();
+
+            return _mapper.Map<IEnumerable<ArticleTiendaResponseDto>>(tiendas);
         }
 
 

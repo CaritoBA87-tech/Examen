@@ -55,29 +55,24 @@ export class ArticulosEditComponent {
         this.articulo = result;
         this.form.patchValue(this.articulo);
 
-      }, error => console.error(error));
+        var url2 = this.baseUrl + "api/Articles/getTiendasArticulo/" + this.id;
 
-      //Obtener las tiendas
-      this.tiendasIDs = [];
-      var url2 = this.baseUrl + "api/Articles/getTiendasArticulo/" + this.id;
+        this.http.get<ArticuloTienda[]>(url2).subscribe(result => {
 
-      this.http.get<ArticuloTienda[]>(url2).subscribe(result => {
+          if (this.tiendas) {
+            result.forEach((value) => {
+              let obj = this.tiendas.find(o => o.id == value.tiendaID);
 
-        var sdsdf = this.tiendas;
-        //this.tiendasSelected = result;
+              if (obj) {
+                obj.checked = true;
+                obj.stock = value.stock;
+              }
+            });
+          }
 
-        if (sdsdf) {
-          result.forEach((value) => {
-            let obj = sdsdf.find(o => o.id == value.tiendaID);
-            this.tiendasIDs.push(value.tiendaID);
-
-            if (obj)
-              obj.checked = true;
-          });
-        }
+        }, error => console.error(error));
 
       }, error => console.error(error));
-
     }
 
   }
@@ -88,10 +83,19 @@ export class ArticulosEditComponent {
     articulo.codigo = this.form.get("codigo").value;
     articulo.descripcion = this.form.get("descripcion").value;
     articulo.precio = this.form.get("precio").value;
-    articulo.stock = this.form.get("stock").value;
-    articulo.tiendasIDs = this.tiendasIDs;
+    articulo.articulosTiendas = [];
+
+    this.tiendas.forEach((value) => {
+      if (value.checked && value.stock > 0) {
+        articulo.articulosTiendas.push({ articuloID: articulo.id ? articulo.id: 0, tiendaId: value.id, stock: value.stock  });
+      }
+    });
 
     if (this.id) { // EDIT mode
+
+      if (articulo.articulosTiendas.length == 0)
+        articulo.articulosTiendas.push({ articuloID: this.articulo.id, tiendaId: 0, stock: 0 });
+
       var url = this.baseUrl + "api/Articles/" + this.articulo.id;
 
       this.http.put<Articulo>(url, articulo).subscribe(result => {
@@ -99,25 +103,11 @@ export class ArticulosEditComponent {
 
        var url2 = this.baseUrl + "api/Articles/updateTiendasArticulo/";
 
-        var df = this.tiendasIDs;
-
-        if (df.length > 0) {
-          df.forEach((value) => {
-            this.conjunto.push({ articuloID: this.articulo.id, tiendaID: value });
-          });
-        }
-
-        else
-          this.conjunto.push({ articuloID: this.articulo.id, tiendaID: 0 });
-
-        this.http.post<ArticuloTienda[]>(url2, this.conjunto).subscribe(result => {
-          //console.log("Artículo " + articulo.id + "ha sido creado");
-
+        this.http.post<ArticuloTienda[]>(url2, articulo.articulosTiendas).subscribe(result => {
 
           this.router.navigate(['/articulos']);
         }, error => console.log(error));
 
-        //this.router.navigate(['/articulos']);
       }, error => console.log(error));
     }
 
@@ -133,26 +123,20 @@ export class ArticulosEditComponent {
     }
   }
 
-  onCheckboxChange(option: Option): void {
-    console.log(`Checkbox ${option.name} is now ${option.checked ? 'checked' : 'unchecked'}`);
+  onCheckboxChange(option: Tienda): void {
 
-    if (option.checked)
-      this.tiendasIDs.push(option.id);
+    let obj = this.tiendas.find(o => o.id == option.id);
 
-    else {
-      const index: number = this.tiendasIDs.indexOf(option.id);
-
-      if (index > -1) {
-        this.tiendasIDs.splice(index, 1); 
-      }
-    }
+    if (obj) 
+        obj.stock = option.checked ? option.stock: 0;
 
   }
 
-}
+  onInputChange(option: Tienda) {
+    let obj = this.tiendas.find(o => o.id == option.id);
 
-interface Option {
-  id: number;
-  name: string;
-  checked: boolean;
+    if (obj) 
+      obj.checked = option.stock > 0 ? true : false;
+  }
+
 }

@@ -12,4 +12,5 @@ export interface Articulo {
 export interface ArticuloTienda {
   articuloID: number;
   tiendaId: number;
+  stock: number;
 }

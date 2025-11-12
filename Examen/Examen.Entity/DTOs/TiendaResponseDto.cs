@@ -11,5 +11,6 @@ namespace Examen.Entity.DTOs
         public int Id { get; set; }
         public string Sucursal { get; set; }
         public string Direccion { get; set; }
+        public List<ArticleTiendaResponseDto> ArticulosTienda { get; set; }
     }
 }

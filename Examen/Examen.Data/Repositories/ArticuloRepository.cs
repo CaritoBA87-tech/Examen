@@ -91,7 +91,7 @@ namespace Examen.Data.Repositories
                 {
                     if (item.TiendaID > 0)
                     {
-                        _context.ArticulosTiendas.Add(new ArticuloTienda { ArticuloID = item.ArticuloID, TiendaID = item.TiendaID, Fecha = DateTime.Now });
+                        _context.ArticulosTiendas.Add(new ArticuloTienda { ArticuloID = item.ArticuloID, TiendaID = item.TiendaID, Fecha = DateTime.Now, Stock = item.Stock });
                         await _context.SaveChangesAsync();
                     }
                 }
@@ -99,7 +99,7 @@ namespace Examen.Data.Repositories
 
         }
 
-        public async Task<IEnumerable<Tienda>> GetStoresByArticleIdAsync(int id)
+        /*public async Task<IEnumerable<Tienda>> GetStoresByArticleIdAsync(int id)
         {
             var stores = from a in _context.ArticulosTiendas
                          join b in _context.Articulos
@@ -108,6 +108,12 @@ namespace Examen.Data.Repositories
                          select new Tienda { Id = a.Tienda.Id, Sucursal = a.Tienda.Sucursal };
 
             return stores;
+        }*/
+
+        public async Task<IEnumerable<ArticuloTienda>> GetStoresByArticleIdAsync(int id)
+        {
+            return await _context.ArticulosTiendas.Where(x => x.ArticuloID == id).Include(x => x.Tienda).ToListAsync();
+
         }
     }
 }

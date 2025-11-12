@@ -104,7 +104,7 @@ namespace Examen.Front.Controllers
         }
 
         [Route("GetStoresByArticleId/{id}")]
-        public async Task<ActionResult<IEnumerable<TiendaResponseDto>>> GetStoresByArticleId(int id)
+        public async Task<ActionResult<IEnumerable<ArticleTiendaResponseDto>>> GetStoresByArticleId(int id)
         {
             try
             {

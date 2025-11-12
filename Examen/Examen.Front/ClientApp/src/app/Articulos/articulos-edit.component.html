@@ -1,3 +1,11 @@
+<style>
+  .anotherInput:not(:placeholder-shown) {
+    color:black;
+    font-weight: bold;
+  }
+
+</style>
+
 <h3 *ngIf="!id">Agregar artículo</h3>
 <h3 *ngIf="id">Editar artículo</h3>
 
@@ -37,16 +45,6 @@
 
     </div>
 
-    <div class="form-group">
-      <label for="name">Stock:</label>
-      <br />
-      <input type="number" id="stock"
-             formControlName="stock" required
-             placeholder=""
-             class="form-control" />
-    </div>
-
-
     <div class="form-group commands">
       <button *ngIf="id" type="submit"
               (click)="onSubmit()"
@@ -73,13 +71,25 @@
 </div>
 
 <div style="width:37%; float:right;">
-  <label style="font-weight:bold;">Tiendas con inventario en existencia:</label>
-  <div *ngFor="let option of tiendas; let i = index">
-    <input type="checkbox"
-           [id]="'checkbox-' + option.id"
-           [name]="'checkbox-' + option.id"
-           [(ngModel)]="option.checked"
-           (change)="onCheckboxChange(option)" />
-    <label [for]="'checkbox-' + option.id">{{ option.sucursal }}</label>
+  <label style="font-size:20px;">Tiendas con inventario en existencia</label>
+
+  
+  <div>
+    <table>
+      <tr *ngFor="let option of tiendas; let i = index">
+        <td>
+          <input type="checkbox"
+                 [id]="'checkbox-' + option.id"
+                 [name]="'checkbox-' + option.id"
+                 [(ngModel)]="option.checked"
+                 (change)="onCheckboxChange(option)" />
+          <label [for]="'checkbox-' + option.id">{{ option.sucursal }}:</label>
+        </td>
+        <td style="padding-left:10px;">
+          <input type="number" style="width:100px;" [(ngModel)]="option.stock"
+                 placeholder="Stock..."
+                 class="form-control anotherInput" (change)="onInputChange(option)" />
+        </td>
+      </tr>
+    </table>
   </div>
-</div>

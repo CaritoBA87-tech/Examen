@@ -20,6 +20,8 @@ namespace Examen.Business.Services
 
         Task updateTiendasArticulo(List<ArticleTiendaResponseDto> conjunto);
 
-        Task<IEnumerable<TiendaResponseDto>> GetStoresByArticleIdAsync(int id);
+        //Task<IEnumerable<TiendaResponseDto>> GetStoresByArticleIdAsync(int id);
+
+        Task<IEnumerable<ArticleTiendaResponseDto>> GetStoresByArticleIdAsync(int id);
     }
 }
