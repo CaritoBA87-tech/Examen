@@ -83,27 +83,35 @@ export class ArticulosEditComponent {
     articulo.codigo = this.form.get("codigo").value;
     articulo.descripcion = this.form.get("descripcion").value;
     articulo.precio = this.form.get("precio").value;
-    articulo.articulosTiendas = [];
+    //articulo.articulosTiendas = [];
+    articulo.articulosTienda = [];
 
     this.tiendas.forEach((value) => {
       if (value.checked && value.stock > 0) {
-        articulo.articulosTiendas.push({ articuloID: articulo.id ? articulo.id: 0, tiendaId: value.id, stock: value.stock  });
+        articulo.articulosTienda.push({ articuloID: articulo.id ? articulo.id : 0, tiendaId: value.id, stock: value.stock });
+        //articulo.articulosTiendas.push({ articuloID: articulo.id ? articulo.id: 0, tiendaId: value.id, stock: value.stock  });
       }
     });
 
     if (this.id) { // EDIT mode
 
-      if (articulo.articulosTiendas.length == 0)
-        articulo.articulosTiendas.push({ articuloID: this.articulo.id, tiendaId: 0, stock: 0 });
+      if (articulo.articulosTienda.length == 0)
+        articulo.articulosTienda.push({ articuloID: this.articulo.id, tiendaId: 0, stock: 0 });
+
+      /*if (articulo.articulosTiendas.length == 0)
+        articulo.articulosTiendas.push({ articuloID: this.articulo.id, tiendaId: 0, stock: 0 });*/
+
+      const { articulosTienda, ...nuevoObjeto } = articulo;
 
       var url = this.baseUrl + "api/Articles/" + this.articulo.id;
 
-      this.http.put<Articulo>(url, articulo).subscribe(result => {
+      this.http.put<Articulo>(url, nuevoObjeto).subscribe(result => {
         console.log("Artículo " + articulo.id + " ha sido actualizado");
 
        var url2 = this.baseUrl + "api/Articles/updateTiendasArticulo/";
 
-        this.http.post<ArticuloTienda[]>(url2, articulo.articulosTiendas).subscribe(result => {
+        //this.http.post<ArticuloTienda[]>(url2, articulo.articulosTiendas).subscribe(result => {
+        this.http.post<ArticuloTienda[]>(url2, articulo.articulosTienda).subscribe(result => {
 
           this.router.navigate(['/articulos']);
         }, error => console.log(error));

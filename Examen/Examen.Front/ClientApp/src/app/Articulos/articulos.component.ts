@@ -116,7 +116,7 @@ export class ArticulosComponent {
 
         const td = document.createElement('td');
         td.style.cssText = 'height:35px;';
-        td.textContent = value;
+        td.textContent = String(value);
 
         if (key == "stock")
           suma = suma + Number(value);
@@ -134,7 +134,7 @@ export class ArticulosComponent {
 
     const tdTotal2 = document.createElement('td');
     rowTotal.style.cssText = ' background-color:gainsboro; height:35px; font-weight:bold;';
-    tdTotal2.textContent = suma;
+    tdTotal2.textContent = String(suma);
     rowTotal.appendChild(tdTotal2);
     tbody.appendChild(rowTotal);
 

@@ -9,9 +9,9 @@
 </div>
 
 <table class="table table-sm table-bordered table-striped">
-  <tr style="background-color: gainsboro;"><th></th><th>Código</th><th>Descripción</th><th>Precio</th><th>Tiendas</th><th>Stock Total</th><th></th><th></th></tr>
+  <tr style="background-color: gainsboro; text-align:center;"><th></th><th>Código</th><th>Descripción</th><th>Precio</th><th style="width:50px;">Disponibilidad en Tiendas</th><th>Stock Total</th><th></th><th></th></tr>
 
-  <tr *ngFor="let item of articulos; let i = index;">
+  <tr style="text-align: center;" *ngFor="let item of articulos; let i = index;">
     <td style="vertical-align:middle">{{i + 1}}</td>
     <td style="vertical-align:middle">{{item.codigo}}</td>
     <td style="vertical-align:middle">
@@ -25,7 +25,7 @@
       </div>
 
     </td>
-    <td style="vertical-align: middle; text-align:right;">{{item.precio | currency}}  </td>
+    <td style="vertical-align: middle;">{{item.precio | currency}}  </td>
 
     <td style="vertical-align:middle">
 
@@ -42,7 +42,7 @@
 
     </td>
 
-    <td style="vertical-align: middle; text-align:right;">{{item.stock}}</td>
+    <td style="vertical-align: middle;">{{item.stock}}</td>
 
     <td class="text-xs-center" style="text-align:center;">
       <button style="background-color:teal; border:none;" class="btn btn-danger btn-sm" [routerLink]="['/articulosEdit', item.id]">

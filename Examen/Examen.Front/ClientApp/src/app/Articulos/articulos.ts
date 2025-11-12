@@ -6,7 +6,7 @@ export interface Articulo {
   imagen: string;
   stock: number;
   tiendasIDs: number[];
-  articulosTiendas: ArticuloTienda[];
+  articulosTienda: ArticuloTienda[];
 }
 
 export interface ArticuloTienda {
