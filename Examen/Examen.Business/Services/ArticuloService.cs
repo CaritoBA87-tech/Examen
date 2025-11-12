@@ -35,7 +35,7 @@ namespace Examen.Business.Services
 
             List<ArticuloTienda> articuloTiendas = new List<ArticuloTienda>();
 
-            foreach (var item in crearArticuloDto.articulosTiendas)
+            foreach (var item in crearArticuloDto.articulosTienda)
             {
                 articuloTiendas.Add(new ArticuloTienda { ArticuloID = createArticle.Id, TiendaID =item.TiendaID, Fecha=DateTime.Now, Stock= item.Stock });
             }

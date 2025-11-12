@@ -13,6 +13,6 @@ namespace Examen.Entity.DTOs
         public decimal precio { get; set; }
         public string imagen { get; set; }
         public int stock { get; set; }
-        public List<ArticleTiendaResponseDto> articulosTiendas { get; set; }
+        public List<ArticleTiendaResponseDto> articulosTienda { get; set; }
     }
 }
